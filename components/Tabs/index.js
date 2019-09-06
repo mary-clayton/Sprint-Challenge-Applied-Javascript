@@ -32,9 +32,7 @@ return tab
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
   .then(response => {
     console.log(response.data);
-    topics.forEach(data => {
       topics.appendChild(CreateTabs(response.data));
-    });
   })
   .catch(error => {
     console.log("The data was not returned", error);

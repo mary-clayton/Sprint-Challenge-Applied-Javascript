@@ -17,3 +17,57 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+//* SELECTORS
+const carouselContainer = document.querySelector('.carousel-container');
+
+//* CAROUSEL
+function CreateCarousel() {
+
+//* Components
+const carousel = document.createElement('div');
+const leftButton = document.createElement('div');
+const imageOne = document.createElement('img');
+const imageTwo = document.createElement('img');
+const imageThree = document.createElement('img');
+const imageFour = document.createElement('img');
+const rightButton = document.createElement('div');
+
+//* Data 
+leftButton.textContent = " < "
+rightButton.textContent = " > "
+imageOne.src = './assets/carousel/mountains.jpeg'
+imageTwo.src = "./assets/carousel/computer.jpeg"
+imageThree.src = "./assets/carousel/trees.jpeg"
+imageFour.src = "./assets/carousel/turntable.jpeg"
+
+//* Classes
+carousel.classList.add('carousel');
+leftButton.classList.add('left-button')
+rightButton.classList.add('right-button')
+
+//* Structure
+carousel.appendChild(leftButton);
+carousel.appendChild(imageOne);
+carousel.appendChild(imageTwo);
+carousel.appendChild(imageThree);
+carousel.appendChild(imageFour);
+carousel.appendChild(rightButton);
+
+//* Event Listeners
+ const right = document.querySelector('');
+ right.addEventListener('click', (e) => {
+  
+  
+ })
+ const left = document.querySelector('.right-button');
+ const image = document.querySelectorAll ('img')
+ image.forEach(a =>{
+ left.addEventListener('click', (e) => {
+  image.style.transform = "translate(30px)"
+  })
+  })
+return carousel
+}
+
+carouselContainer.appendChild(CreateCarousel());
