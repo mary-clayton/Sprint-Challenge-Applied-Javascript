@@ -36,15 +36,15 @@ It stands for document Object Model and it is the interface to web pages.
 
 DOM events are actions that happen as a result of a change of elements of a DOM tree.
 
-1. What is an event listener?
+3. What is an event listener?
 
 Event listeners are actions that are triggered when the user interacts with a specific part of the webpage.
 
-2. Why would we convert a NodeList into an Array?
+4. Why would we convert a NodeList into an Array?
 
 It is better to convert NodeLists because there’s less work being done by using array methods rather than for loops.
 
-3. What is a component?
+5. What is a component?
 
 A component is a small piece of a larger whole. It allow you to create reusable, custom elements and use them in web apps.
 
@@ -61,7 +61,7 @@ Your finished project must include all of the following requirements:
 
 * [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [ ] Following the instructions in the `Header/index.js` file, create the Header component.
 
 * [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
